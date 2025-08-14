@@ -1,0 +1,10 @@
+INÍCIO
+    ESCREVA "Digite um número inteiro entre 1 e 10:"
+    LEIA n
+
+    d1 ← n - 1
+    d2 ← 10 - n
+    resultado ← (d1 × 10) + d2
+
+    ESCREVA "9 × ", n, " = ", resultado
+FIM

@@ -1,0 +1,20 @@
+Algoritmo para o truque da tabuada do 9
+
+ENTRADA:
+- Ler o número inteiro n (1 ≤ n ≤ 10).
+
+PROCESSAMENTO:
+1. Calcular a dezena: d1 = n - 1.
+2. Calcular a unidade: d2 = 10 - n.
+3. Calcular o resultado final:
+   resultado = (d1 × 10) + d2.
+
+SAÍDA:
+- Exibir "9 × n = resultado".
+
+EXEMPLO:
+Para n = 7:
+d1 = 7 - 1 = 6
+d2 = 10 - 7 = 3
+resultado = (6 × 10) + 3 = 63
+Logo: 9 × 7 = 63.
