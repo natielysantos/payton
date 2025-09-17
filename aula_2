@@ -1,0 +1,32 @@
+# =====================
+# Exercício 1: Divisão e tipos
+# =====================
+var1, var2 = 5, 2
+print("Ex1 - Tipos:", type(var1), type(var2))
+resultado = var1 / var2
+print("Ex1 - Resultado:", resultado, "Tipo:", type(resultado))
+
+# =====================
+# Exercício 2: Soma e tipos
+# =====================
+texto, valor_inteiro, valor_decimal = "o resultado é", 10, 3.5
+soma = valor_inteiro + valor_decimal
+print("Ex2 - Variáveis:", texto, valor_inteiro, valor_decimal, soma)
+print("Ex2 - Tipos:", type(texto), type(valor_inteiro), type(valor_decimal), type(soma))
+
+# =====================
+# Exercício 3: Troca de valores
+# =====================
+v1, v2 = 10, 20
+aux = v1
+v1 = v2
+v2 = aux
+print("Ex3 - Valores trocados:", v1, v2)
+
+# =====================
+# Exercício 4: Juros por 3 meses
+# =====================
+saldo, juros = 500.0, 1.01
+for _ in range(3):  # calcula 3 meses
+    saldo *= juros
+print("Ex4 - Após 3 meses meu novo saldo é:", saldo)
