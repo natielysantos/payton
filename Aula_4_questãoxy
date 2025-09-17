@@ -1,0 +1,91 @@
+def exercicio1():
+    # Ex. 1 - Valor do Terreno
+    comprimento = int(input("Digite o comprimento do terreno (m): "))
+    largura = int(input("Digite a largura do terreno (m): "))
+    preco_m2 = float(input("Digite o preço do metro quadrado (R$): "))
+
+    area_m2 = comprimento * largura
+    preco_total = preco_m2 * area_m2
+
+    print(f"O terreno possui {area_m2}m2 e custa R${preco_total:,.2f}")
+
+
+def exercicio2():
+    # Ex. 2 - Conversão Fahrenheit → Celsius
+    fahrenheit = int(input("Digite a temperatura em graus Fahrenheit: "))
+    celsius = int((fahrenheit - 32) * (5/9))
+    print(f"{fahrenheit} graus Fahrenheit são {celsius} graus Celsius.")
+
+
+def exercicio3():
+    # Ex. 3 - Cálculo do preço total da compra
+    total = 0
+    for i in range(1, 4):
+        produto = input(f"Digite o nome do produto {i}: ")
+        preco = float(input(f"Digite o preço unitário do produto {i}: "))
+        qtd = int(input(f"Digite a quantidade do produto {i}: "))
+        total += preco * qtd
+
+    print(f"Total: R${total:,.2f}")
+
+
+def exercicio4():
+    # Ex. 4 - Cálculo da menor quantidade de notas
+    valor = int(input("Digite o valor em reais: "))
+
+    notas100 = valor // 100
+    valor %= 100
+
+    notas50 = valor // 50
+    valor %= 50
+
+    notas20 = valor // 20
+    valor %= 20
+
+    notas10 = valor // 10
+    valor %= 10
+
+    notas5 = valor // 5
+    valor %= 5
+
+    notas2 = valor // 2
+    valor %= 2
+
+    notas1 = valor
+
+    print(f"{notas100} nota(s) de R$100,00")
+    print(f"{notas50} nota(s) de R$50,00")
+    print(f"{notas20} nota(s) de R$20,00")
+    print(f"{notas10} nota(s) de R$10,00")
+    print(f"{notas5} nota(s) de R$5,00")
+    print(f"{notas2} nota(s) de R$2,00")
+    print(f"{notas1} nota(s) de R$1,00")
+
+
+# -------------------------------
+# Programa Principal com Menu
+# -------------------------------
+while True:
+    print("\n===== MENU DE EXERCÍCIOS =====")
+    print("1 - Valor do terreno")
+    print("2 - Conversão Fahrenheit → Celsius")
+    print("3 - Cálculo do preço total da compra")
+    print("4 - Cálculo de notas para pagamento")
+    print("0 - Sair")
+    print("==============================")
+
+    opcao = input("Escolha uma opção: ")
+
+    if opcao == "1":
+        exercicio1()
+    elif opcao == "2":
+        exercicio2()
+    elif opcao == "3":
+        exercicio3()
+    elif opcao == "4":
+        exercicio4()
+    elif opcao == "0":
+        print("Saindo do programa... Até logo!")
+        break
+    else:
+        print("Opção inválida! Tente novamente.")
